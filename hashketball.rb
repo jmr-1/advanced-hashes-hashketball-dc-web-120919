@@ -162,9 +162,20 @@ def winning_team
   
   current_winning_team = "default"
   winning_score = 0 
+  nds = game_hash
   
-  
-  
-  
+  nds.each do |team, traits|
+    
+    team_score = 0 
+    traits[:players].each do |players|
+      team_score += players[:points]
+    end 
+    
+    if team_score > winning_score 
+      current_winning_team = nds[team][:team_name].to_s 
+      puts "#{current_winning_team} is winning!"
+    end 
+  end 
+  puts "#{current_winning_team} won!"
   return current_winning_team
 end 

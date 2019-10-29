@@ -172,7 +172,8 @@ def most_points_scored
   #     end 
   #   end 
   # end 
-  
+  info_array = comparison_test("points")
+  puts info_array 
   return player_name 
 end 
 

@@ -135,28 +135,10 @@ end
 
 def big_shoe_rebounds
   
-  # high_rebounds = 0 
-  # shoe_size = 0 
-  # nds = game_hash
-  # #simple loop this time, need to hold shoe_size to compare and get the rebound 
-  
-  # nds.each do |team, traits|
-    
-  #   traits[:players].each do |players|
-      
-  #     if players[:shoe] > shoe_size
-        
-  #       shoe_size = players[:shoe]
-  #       high_rebounds = players[:rebounds]
-  #     end 
-  #   end 
-  # end 
-  # return high_rebounds
-  
+  #uses comparison test, then searches for player name and finds relevant rebound number 
   info_array = comparison_test("shoe")
   player_name = info_array[0]
   player_info = player_searcher(player_name)
-  
   return player_info[:rebounds]
 end 
 

@@ -158,7 +158,8 @@ end
 def most_points_scored
   
   info_array = comparison_test("points")
-  return player_name 
+  #index 0 is player name, index 1 is points 
+  return info_array[0]
 end 
 
 def winning_team

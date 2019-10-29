@@ -135,23 +135,23 @@ end
 
 def big_shoe_rebounds
   
-  high_rebounds = 0 
-  shoe_size = 0 
-  nds = game_hash
-  #simple loop this time, need to hold shoe_size to compare and get the rebound 
+  # high_rebounds = 0 
+  # shoe_size = 0 
+  # nds = game_hash
+  # #simple loop this time, need to hold shoe_size to compare and get the rebound 
   
-  nds.each do |team, traits|
+  # nds.each do |team, traits|
     
-    traits[:players].each do |players|
+  #   traits[:players].each do |players|
       
-      if players[:shoe] > shoe_size
+  #     if players[:shoe] > shoe_size
         
-        shoe_size = players[:shoe]
-        high_rebounds = players[:rebounds]
-      end 
-    end 
-  end 
-  return high_rebounds
+  #       shoe_size = players[:shoe]
+  #       high_rebounds = players[:rebounds]
+  #     end 
+  #   end 
+  # end 
+  # return high_rebounds
 end 
 
 

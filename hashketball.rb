@@ -63,6 +63,25 @@ def team_detail(team, detail)
   return look_for 
 end 
 
+def comparison_test(trait_name)
+  
+  nds = game_hash
+  comparison = 0 
+  comparison_s = ""
+  player_default = ""
+  
+  nds.each do |team, traits|
+    
+    traits[:players].each do |players|
+      
+      if players[:"#{trait_name}"] > comparison  
+        comparison = players[:"#{trait_name}"] 
+        player_default = players[:player_name]
+      end 
+    end 
+    return [player_default, comparison]
+  end 
+
 def num_points_scored(player_name)
   
   info = player_searcher(player_name)
@@ -137,22 +156,22 @@ end
 
 def most_points_scored
   
-  player_name = "default"
-  points = 0 
-  nds = game_hash
+  # player_name = "default"
+  # points = 0 
+  # nds = game_hash
   
-  #simple loop like above 
+  # #simple loop like above 
   
-  nds.each do |team, traits|
+  # nds.each do |team, traits|
     
-    traits[:players].each do |players|
+  #   traits[:players].each do |players|
       
-      if players[:points] > points 
-        points = players[:points]
-        player_name = players[:player_name]
-      end 
-    end 
-  end 
+  #     if players[:points] > points 
+  #       points = players[:points]
+  #       player_name = players[:player_name]
+  #     end 
+  #   end 
+  # end 
   
   return player_name 
 end 

@@ -157,24 +157,7 @@ end
 
 def most_points_scored
   
-  # player_name = "default"
-  # points = 0 
-  # nds = game_hash
-  
-  # #simple loop like above 
-  
-  # nds.each do |team, traits|
-    
-  #   traits[:players].each do |players|
-      
-  #     if players[:points] > points 
-  #       points = players[:points]
-  #       player_name = players[:player_name]
-  #     end 
-  #   end 
-  # end 
   info_array = comparison_test("points")
-  puts info_array 
   return player_name 
 end 
 

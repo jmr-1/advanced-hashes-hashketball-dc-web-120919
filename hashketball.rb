@@ -152,6 +152,12 @@ def big_shoe_rebounds
   #   end 
   # end 
   # return high_rebounds
+  
+  info_array = comparison_test("shoe")
+  player_name = info_array[0]
+  player_info = player_searcher(player_name)
+  
+  return player_info[:rebounds]
 end 
 
 

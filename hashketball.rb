@@ -170,7 +170,8 @@ def winning_team
     traits[:players].each do |players|
       team_score += players[:points]
     end 
-    binding.pry 
+    
+    #calculates a team's entire score then checks it against the current winner 
     if team_score > winning_score 
       current_winning_team = nds[team][:team_name].to_s 
       winning_score = team_score 

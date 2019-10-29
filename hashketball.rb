@@ -191,7 +191,9 @@ def player_with_longest_name
     
     traits[:players].each do |players|
       
-      puts players 
+      if players[:player_name].length > long_name 
+        long_name = players[:player_name]
+      end 
     end 
     
   end 

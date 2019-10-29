@@ -173,6 +173,7 @@ def winning_team
     binding.pry 
     if team_score > winning_score 
       current_winning_team = nds[team][:team_name].to_s 
+      winning_score = team_score 
       puts "#{current_winning_team} is winning!"
     end 
   end 

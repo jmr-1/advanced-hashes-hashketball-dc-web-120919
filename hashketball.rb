@@ -150,11 +150,14 @@ def most_points_scored
       
       if players[:points] > points 
         points = players[:points]
-        puts points 
         player_name = players[:player_name]
       end 
     end 
   end 
   
   return player_name 
+end 
+
+def winning_team
+  
 end 

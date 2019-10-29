@@ -50,7 +50,6 @@ def team_search(team_name)
     traits.each do |info, stats|
     
       if stats.to_s == team_name
-        puts "Team found!"
         return traits 
       end 
     end 
@@ -203,5 +202,9 @@ def player_with_longest_name
 end 
 
 def long_name_steals_a_ton?
+  
+  longest_name = player_with_longest_name
+  longest_steals = player_searcher(longest_name)[:steals]
+  puts longest_steals
   
 end 

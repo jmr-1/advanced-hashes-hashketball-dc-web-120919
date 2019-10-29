@@ -181,3 +181,21 @@ def winning_team
   puts "#{current_winning_team} won!"
   return current_winning_team
 end 
+
+def player_with_longest_name 
+  
+  nds = game_hash
+  long_name = ""
+  
+  nds.each do |team, traits|
+    
+    traits[:players].each do |players|
+      
+      puts players 
+    end 
+    
+  end 
+  
+  puts "#{long_name} has a long name!"
+  return long_name 
+end 

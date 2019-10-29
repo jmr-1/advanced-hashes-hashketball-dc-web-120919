@@ -199,6 +199,11 @@ def long_name_steals_a_ton?
   longest_name = player_with_longest_name
   longest_steals = player_searcher(longest_name)[:steals]
   
-  comparison_test("steals")
+  info_array = comparison_test("steals")
   
+  if longest_name == info_array[0]
+    return true 
+  else
+    return false 
+  end 
 end 

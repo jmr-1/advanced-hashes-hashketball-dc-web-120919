@@ -160,4 +160,11 @@ end
 
 def winning_team
   
+  current_winning_team = "default"
+  winning_score = 0 
+  
+  
+  
+  
+  return current_winning_team
 end 

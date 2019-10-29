@@ -79,8 +79,8 @@ def comparison_test(trait_name)
         player_default = players[:player_name]
       end 
     end 
-    return [player_default, comparison]
   end 
+  return [player_default, comparison]
 end 
 
 def num_points_scored(player_name)

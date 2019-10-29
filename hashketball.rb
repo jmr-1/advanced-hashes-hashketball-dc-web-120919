@@ -198,6 +198,7 @@ def long_name_steals_a_ton?
   
   longest_name = player_with_longest_name
   longest_steals = player_searcher(longest_name)[:steals]
-  puts longest_steals
+  
+  comparison_test("steals")
   
 end 
